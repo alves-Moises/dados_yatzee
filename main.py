@@ -14,6 +14,19 @@ def valid_int():
             valid = True
     return x
 
+#valodacao retorno booleano
+def valid_int_bool(valores):
+    valid = False
+    while not valid:
+        try:
+            for item in valores:
+                int(item[valores])
+        except:
+            print('Resposta inválida. Digite uma resposta válida.')
+        else:
+            valid = True
+    print('valido')
+
 #Rollagem de dados
 def roll(dices, dices_list = []):
     while len(dices_list) < dices:
