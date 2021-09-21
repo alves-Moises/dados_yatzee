@@ -19,10 +19,9 @@ def valid_int_bool(valores):
     valid = False
     while not valid:
         try:
-            for item in valores:
-                int(item[valores])
+            int(valores)
         except:
-            print('Resposta inválida. Digite uma resposta válida.')
+            print('erro de .')
         else:
             valid = True
     print('valido')
