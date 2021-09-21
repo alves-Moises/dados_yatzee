@@ -38,8 +38,12 @@ def nova_lista(lista):
     valid = False
     while not valid:
         posicoes = input().split(' ')
+        valid = True
         for i in posicoes:
-            valid_int()
+            if not valid_int_bool(i):
+                valid = False
+            
+            
 
 
 #funcao principal
