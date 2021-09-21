@@ -35,8 +35,14 @@ def roll(dices, dices_list = []):
 def nova_lista(lista):
     print('Digite as posições que deseja manter: (ex: 1 2 3)')
     valid = False
-    while not valid:
-        posicoes = input().split(' ')
+    posicoes = [0]
+
+    while not (valid or (max(posicoes) <= max(lista))):
+        if posicoes != [0]:
+            print('Digite posições válidas')
+
+
+        posicoes = input().split()
         valid = True
         for i in posicoes:
             if not valid_int_bool(i):
@@ -64,9 +70,13 @@ def main():
             print(f'Jogada {i + 1}')
             resultado = roll(dados_qtd, list_dados)
             
-            for i in range(len(resultado)): print(f'Dado nº{i}: ', resultado[i])
+            for j in range(len(resultado)): 
+                print(f'Dado n{j}: ', resultado[i])
+
+            #resultado ordenado
             print('#' * 50)
             print(sorted(resultado))
+
             list_dados = nova_lista(resultado)
             
 
