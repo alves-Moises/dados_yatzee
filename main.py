@@ -44,11 +44,12 @@ def nova_lista(lista):
 
         posicoes = input().split()
         valid = True
-        for i in posicoes:
-            if not valid_int_bool(i):
+
+        for valor in posicoes:
+            if not valid_int_bool(valor):
                 valid = False
-            
-            
+
+
 
 
 #funcao principal
