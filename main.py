@@ -63,7 +63,8 @@ def main():
         while i < 3:
             print(f'Jogada {i + 1}')
             resultado = roll(dados_qtd, list_dados)
-            for i in resultado: print('Resultado parcial: ', i)
+            
+            for i in range(len(resultado)): print(f'Dado nº{i}: ', resultado[i])
             print('#' * 50)
             print(sorted(resultado))
             list_dados = nova_lista(resultado)
