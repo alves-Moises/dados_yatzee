@@ -20,10 +20,10 @@ def valid_int_bool(valores):
     while not valid:
         try:
             int(valores)
-        except:
-            print('erro de .')
-        else:
-            valid = True
+    except ValueError:
+        print('erro em ', valores)
+    else:
+        valid = True 
     print('valido')
 
 #Rollagem de dados
