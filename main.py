@@ -2,6 +2,11 @@
 
 import random as r
 
+def jogar():
+    valid =  False
+    while not valid:
+        ''
+
 #validacao de valor inteiro
 def valid_int():
     valid = False
