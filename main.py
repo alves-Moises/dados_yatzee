@@ -65,9 +65,11 @@ def main():
     print("=" * (25 - int(len(msg)/2)-1), msg, "=" * (25 - int(len(msg)/2)-1))
     print("=" * 50)
 
+    # Leitura de valores
     print('\nDigite a quantidade de dados: ')
     dados_qtd = valid_int()
 
+    #
     jogar = True
     while jogar:
         partida = True
@@ -89,6 +91,8 @@ def main():
 
 
             i += 1
+        print("Fim da jogada. Gostaria de continar? \n[1] Sim [2] Não     ", end = '')
+        partida = jogar()
 
         
 main()
