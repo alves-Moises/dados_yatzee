@@ -20,6 +20,17 @@ def comb_func():
             }
     return comb
 
+def info_jogadores(qtd):
+    info = {}
+    nomes = []
+    for i in range(qtd):
+        print(f'Digite o nome do jogador {i + 1}: ', end = '')
+        nome = input()
+        nomes.append(nome)
+        info[nome] = comb_func()
+    return[nomes, info]
+
+    
 #validacao de valor inteiro
 def valid_int():
     valid = False
