@@ -106,11 +106,13 @@ def main():
         partida = True
         list_dados = []
         i = 0    
-        while i < 3:
-            print(f'Jogada {i + 1}')
-            resultado = roll(dados_qtd, list_dados)
-            
-            for j in range(len(resultado)): 
+        for nome in lista_jogadores:
+            while i < 3:
+                print(f'Jogada de {nome}')
+                print(f'Jogada {i + 1}')
+                resultado = roll(dados_qtd, list_dados)
+                
+                for j in range(len(resultado)): 
                 print(f'Dado n{j}: ', resultado[j])
 
             #resultado ordenado
