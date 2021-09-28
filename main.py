@@ -46,7 +46,7 @@ def valid_int_bool(valores):
 
 #Rollagem de dados
 def roll(dices, dices_list = []):
-    while len(dices_list) < dices:
+    while len(dices_list) < int(dices):
         dices_list.append(r.randint(1, 6))
     return dices_list
 
