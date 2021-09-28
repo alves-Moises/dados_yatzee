@@ -2,10 +2,23 @@
 
 import random as r
 
-def jogar():
-    valid =  False
-    while not valid:
-        ''
+def comb_func():
+    comb = {
+                '1':        -1,
+                '2':        -1,
+                '3':        -1,
+                '4':        -1,
+                '5':        -1,
+                '6':        -1,
+                'Par':      -1,
+                'Trinca':   -1,
+                'small':    -1,
+                'big':      -1,
+                'poker':    -1,
+                'Yatzee_1': -1,
+                'Yatzee_2': -1
+            }
+    return comb
 
 #validacao de valor inteiro
 def valid_int():
