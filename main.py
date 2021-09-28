@@ -1,7 +1,10 @@
 #author: alves-Moises
 
+from math import inf
 import random as r
 
+def lin():
+    print('=-' * 50)
 def comb_func():
     comb = {
                 '1':        -1,
@@ -12,11 +15,12 @@ def comb_func():
                 '6':        -1,
                 'Par':      -1,
                 'Trinca':   -1,
+                '2x-3x':    -1,  # par e trinca
                 'small':    -1,
                 'big':      -1,
-                'poker':    -1,
-                'Yatzee_1': -1,
-                'Yatzee_2': -1
+                'poker':    -1,  # 4 iguais
+                'Yatzee_1': -1,  # Yatze! 
+                'Yatzee_2': -1   # 11111111111
             }
     return comb
 
@@ -54,7 +58,6 @@ def valid_int_bool(valores):
         valid = True 
     return valid
 
-
 #Rollagem de dados
 def roll(dices, dices_list = []):
     while len(dices_list) < int(dices):
@@ -62,11 +65,11 @@ def roll(dices, dices_list = []):
     return dices_list
 
 def nova_lista(lista):
-    print('Digite as posições que deseja manter: (ex: 1 2 3)')
+    print('Digite os valores que deseja manter: (ex: 1 2 3)')
     valid = False
     posicoes = [0]
 
-    while not (valid or (max(posicoes) > len(lista))):
+    while not (valid):
         if posicoes != [0]:
             print('Digite posições válidas')
 
@@ -81,9 +84,11 @@ def nova_lista(lista):
 
     return posicoes   
 
-
-#funcao principal
+#funcao principalE
 def main():
+    lista_jogadores = []
+    info_jogadores = {}
+
     msg = 'Dados, rolagem, jogos '
     print("=" * 50)
     print("=" * (25 - int(len(msg)/2)-1), msg, "=" * (25 - int(len(msg)/2)-1))
@@ -101,10 +106,8 @@ def main():
     print('\nDigite a quantidade de dados: ')
     dados_qtd = valid_int()
 
-    #
     jogar = True
     while jogar:
-        partida = True
         list_dados = []
         i = 0    
         for nome in lista_jogadores:
@@ -122,8 +125,6 @@ def main():
 
                 list_dados = nova_lista(resultado)
                 
-
-
                 i += 1
             print("Fim da jogada. Gostaria de continar? \n[1] Sim [2] Não     ", end = '')
 
