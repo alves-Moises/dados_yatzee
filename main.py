@@ -89,6 +89,13 @@ def main():
     print("=" * (25 - int(len(msg)/2)-1), msg, "=" * (25 - int(len(msg)/2)-1))
     print("=" * 50)
 
+    #listar_jogadores
+    print('Digite a quantidade de jogadores: ')
+    qtd_jogadores = valid_int()
+
+   
+    lista_jogadores, info_jogadores = info_jogadores(qtd_jogadores)
+    print(info_jogadores)
     # Leitura de valores
     print('\nDigite a quantidade de dados: ')
     dados_qtd = valid_int()
