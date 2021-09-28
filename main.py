@@ -97,6 +97,7 @@ def main():
     lista_jogadores, info_jogadores = info_jogadores(qtd_jogadores)
     print(info_jogadores)
     # Leitura de valores
+
     print('\nDigite a quantidade de dados: ')
     dados_qtd = valid_int()
 
@@ -113,18 +114,19 @@ def main():
                 resultado = roll(dados_qtd, list_dados)
                 
                 for j in range(len(resultado)): 
-                print(f'Dado n{j}: ', resultado[j])
+                    print(f'Dado n{j}: ', resultado[j])
 
-            #resultado ordenado
-            print('#' * 50)
-            print(sorted(resultado))
+                #resultado ordenado
+                print('#' * 50)
+                print(sorted(resultado))
 
-            list_dados = nova_lista(resultado)
-            
+                list_dados = nova_lista(resultado)
+                
 
 
-            i += 1
-        print("Fim da jogada. Gostaria de continar? \n[1] Sim [2] Não     ", end = '')
+                i += 1
+            print("Fim da jogada. Gostaria de continar? \n[1] Sim [2] Não     ", end = '')
+
         partida = jogar()
 
         
