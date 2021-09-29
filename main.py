@@ -25,7 +25,8 @@ def comb_func():
             }
     return comb
 
-def info_jogadores(qtd):
+#definir nomes e atributos dos jogadores
+def define_jogadores(qtd):
     info = {}
     nomes = []
     for i in range(qtd):
