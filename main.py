@@ -36,7 +36,6 @@ def define_jogadores(qtd):
         info[nome] = comb_func()
     return[nomes, info]
 
-    
 #validacao de valor inteiro
 def valid_int():
     valid = False
@@ -85,7 +84,6 @@ def nova_lista(lista):
     while not (valid):
         if posicoes != [0]:
             print('Digite posições válidas')
-
 
         posicoes = input().split()
         valid = True
@@ -145,10 +143,6 @@ def main():
                 list_dados = nova_lista(resultado)
                 print('dados pra rolar denovo: ', list_dados)
                 i += 1
-            print("Fim da jogada. Gostaria de continar? \n[1] Sim [2] Não     ", end = '')
-
-        partida = jogar()
-
         
 main()
 
