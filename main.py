@@ -141,7 +141,7 @@ def main():
 
                 #segura os dados
                 list_dados = nova_lista(resultado)
-                
+                print('dados pra rolar denovo: ', list_dados)
                 i += 1
             print("Fim da jogada. Gostaria de continar? \n[1] Sim [2] Não     ", end = '')
 
