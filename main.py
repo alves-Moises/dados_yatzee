@@ -133,7 +133,13 @@ def main():
                 #resultado ordenado
                 print('#' * 50)
                 print(sorted(resultado))
+                lin()
+                print('[0] Encerrar jogada')
+                print('[1] Continuar jogando os dados')
+                if not(valida_jogar()):
+                    break
 
+                #segura os dados
                 list_dados = nova_lista(resultado)
                 
                 i += 1
