@@ -47,6 +47,17 @@ def valid_int():
             valid = True
     return x
 
+#continuar jogo
+def valida_jogar():
+    valid = False
+    while not valid:
+        x = valid_int()
+        if x in [0, 1]:
+            valid = True
+        else:
+            print('resposta inválida')
+    return(bool(x))
+
 #valodacao retorno booleano
 def valid_int_bool(valores):
     valid = False
