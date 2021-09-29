@@ -76,6 +76,7 @@ def roll(dices, dices_list = []):
         dices_list.append(r.randint(1, 6))
     return dices_list
 
+#pegar os valores para nova rolagem dos dados
 def nova_lista(lista):
     for i in range(len(lista)):
         print(f'Posicao {i}: {lista[i]}')
