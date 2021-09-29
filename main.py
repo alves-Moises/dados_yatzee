@@ -4,7 +4,8 @@ from math import inf
 import random as r
 
 def lin():
-    print('=-' * 50)
+    print('=-' * 25)
+
 def comb_func():
     comb = {
                 '1':        -1,
