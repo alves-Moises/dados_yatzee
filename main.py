@@ -109,11 +109,9 @@ def main():
     print('Digite a quantidade de jogadores: ')
     qtd_jogadores = valid_int()
 
+    #informacoes jogadores
+    lista_jogadores, info_jogadores = define_jogadores(qtd_jogadores)
    
-    lista_jogadores, info_jogadores = info_jogadores(qtd_jogadores)
-    print(info_jogadores)
-    # Leitura de valores
-
     print('\nDigite a quantidade de dados: ')
     dados_qtd = valid_int()
 
