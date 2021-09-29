@@ -121,7 +121,9 @@ def main():
     while jogar:
         list_dados = []
         i = 0    
+        lin()
         for nome in lista_jogadores:
+            lin()
             while i < 3:
                 print(f'Jogada de {nome}')
                 print(f'Jogada {i + 1}')
