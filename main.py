@@ -77,23 +77,30 @@ def roll(dices, dices_list = []):
     return dices_list
 
 def nova_lista(lista):
-    print('Digite os valores que deseja manter: (ex: 1 2 3)')
+    for i in range(len(lista)):
+        print(f'Posicao {i}: {lista[i]}')
+
+    print('Digite as posicoes que deseja manter: (ex: 1 2 3)')
     valid = False
     posicoes = [0]
 
     while not (valid):
+        valid = True
         if posicoes != [0]:
             print('Digite posições válidas')
 
         posicoes = input().split()
-        valid = True
-
+        print(posicoes)
         for valor in posicoes:
-            if not valid_int_bool(valor):
+            if not (valid_int_bool(valor)) or (len(posicoes) > len(lista)):
                 valid = False
 
+    #nova lista
+    temp_list = []
+    for i in posicoes:
+        temp_list.append(lista[int(i)])
 
-    return posicoes   
+    return temp_list   
 
 #funcao principalE
 def main():
