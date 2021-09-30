@@ -8,20 +8,18 @@ def lin():
 
 def comb_func():
     comb = {
-                '1':        -1,
-                '2':        -1,
-                '3':        -1,
-                '4':        -1,
-                '5':        -1,
-                '6':        -1,
-                'Par':      -1,
-                'Trinca':   -1,
-                '2x-3x':    -1,  # par e trinca
-                'small':    -1,
-                'big':      -1,
-                'poker':    -1,  # 4 iguais
-                'Yatzee_1': -1,  # Yatze! 
-                'Yatzee_2': -1   # 11111111111
+                '1':            -1,
+                '2':            -1,
+                '3':            -1,
+                '4':            -1,
+                '5':            -1,
+                '6':            -1,
+                'poker':        -1,  # 4 iguais
+                '2x-3x':        -1,  # par e trinca
+                'escada':       -1,  # 1-5 
+                'Yatzee_1':     -1,  # Yatze! 
+                'Yatzee_2':     -1,   # 11111111111
+                'chance':       -1
             }
     return comb
 
