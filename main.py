@@ -160,7 +160,6 @@ def main():
                     break
 
                 #segura os dados
-                list_dados = nova_lista(resultado)
                 print('dados pra rolar denovo: ', list_dados)
                 i += 1
             lin()
