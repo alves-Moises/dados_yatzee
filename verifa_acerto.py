@@ -11,6 +11,24 @@ def valid_int():
             valid = True
     return x
 
+def escolha_lista():
+    lista = [
+            '1',
+            '2',
+            '3',
+            '4',
+            '5',
+            '6',
+            't',
+            'p',
+            '23x',
+            'es',
+            'ec',
+            'ytz',
+            'yy',
+            '0'
+        ]
+    return lista
 #printa tabela de pontuacoes
 def print_escolha():
     print('Digite sua escolha:')
