@@ -29,6 +29,25 @@ def escolha_lista():
             '0'
         ]
     return lista
+
+#escolher onde aplicar a pontuação
+def escolhe_combo(lista, jogador):
+    valid =  False
+    while not valid:
+        escolha = input()
+        if escolha.lower() in escolha_lista():
+            if (jogador[escolha] == -1):
+                valid = True
+                print('Escolha certa')
+            else: 
+                print('Essa casa já está pontuada.')
+        else:
+            print('Por favor, digite um valor válido')
+            registra_pontuacao(lista, jogador)
+
+        
+    return escolha
+            
 #printa tabela de pontuacoes
 def print_escolha():
     print('Digite sua escolha:')
