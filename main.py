@@ -132,11 +132,16 @@ def main():
 
     jogar = True
     while jogar:
-        list_dados = []
-        i = 0    
+           
         lin()
         for nome in lista_jogadores:
-            lin()
+            role = True
+            list_dados = []
+            i = 0 
+
+        lin()
+            while i < 3 and role == True:
+                lin()
             while i < 3:
                 print(f'Jogada de {nome}')
                 print(f'Jogada {i + 1}')
