@@ -68,4 +68,10 @@ def print_escolha():
     print('Sua escolha: ', end='')
 #atualizar_pontuacao
 def registra_pontuacao(lista, jogador):
-    print_escolha()
+    print_escolha(jogador)
+    escolha = escolhe_combo(lista, jogador)
+    if escolha in ['1', '2', '3', '4', '5', '6']:
+        escolha = jgd.escolha_num(lista, jogador, escolha)
+    
+
+    return jogador
