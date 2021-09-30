@@ -153,6 +153,7 @@ def main():
                 #resultado ordenado
                 print('#' * 50)
                 print(sorted(resultado))
+
                 lin()
                 if not (i >= 2):    
                     print('[0] Encerrar jogada')
