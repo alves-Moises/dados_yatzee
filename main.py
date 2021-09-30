@@ -85,9 +85,7 @@ def roll(dices, dices_list = []):
 
 #pegar os valores para nova rolagem dos dados
 def nova_lista(lista):
-    for i in range(len(lista)):
-        print(f'Posicao {i}: {lista[i]}')
-
+    imprime_dados(lista)
     print('Digite as posicoes que deseja manter: (ex: 1 2 3)')
     valid = False
     posicoes = [0]
