@@ -66,6 +66,7 @@ def print_escolha():
     print('# [yy]  yazzee 2')
     print('# [0]   chance')
     print('Sua escolha: ', end='')
+
 #atualizar_pontuacao
 def registra_pontuacao(lista, jogador):
     print_escolha(jogador)
