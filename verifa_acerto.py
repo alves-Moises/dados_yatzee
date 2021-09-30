@@ -1,4 +1,4 @@
-
+import jogada as jgd
 #valida inteiro
 def valid_int():
     valid = False
