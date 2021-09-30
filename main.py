@@ -137,7 +137,6 @@ def main():
             list_dados = []
             i = 0 
 
-            lin()
             while i < 3 and role == True:
                 lin()
                 msg = f'jogada de {nome}'
@@ -155,13 +154,16 @@ def main():
                     print('[0] Encerrar jogada')
                     print('[1] Continuar jogando os dados')
                     if not(valida_jogar()):
-                        break
-                    list_dados = nova_lista(resultado)
+                        role = False
+                    else:
+                        list_dados = nova_lista(resultado)
                 
                 #segura os dados
-                print('dados pra rolar denovo: ', list_dados)
+                print('dados: ', list_dados)
                 i += 1
-            info_jogadores[nome] = vA.registra_pontuacao(resultado, info_jogadores[nome])
+
+            #atualiza informacoes de pontuacao
+            info_jogadores[nome] = vA.registra_pontuacao(resultado, info_jogadores[nome], )
             lin()
             print('Prixom jogador')
             lin()
