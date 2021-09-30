@@ -154,11 +154,13 @@ def main():
                 print('#' * 50)
                 print(sorted(resultado))
                 lin()
-                print('[0] Encerrar jogada')
-                print('[1] Continuar jogando os dados')
-                if not(valida_jogar()):
-                    break
-
+                if not (i >= 2):    
+                    print('[0] Encerrar jogada')
+                    print('[1] Continuar jogando os dados')
+                    if not(valida_jogar()):
+                        break
+                    list_dados = nova_lista(resultado)
+                
                 #segura os dados
                 print('dados pra rolar denovo: ', list_dados)
                 i += 1
