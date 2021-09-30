@@ -139,16 +139,14 @@ def main():
             list_dados = []
             i = 0 
 
-        lin()
+            lin()
             while i < 3 and role == True:
                 lin()
-            while i < 3:
-                print(f'Jogada de {nome}')
+                msg = f'jogada de {nome}'
+                print("=" * (25 - int(len(msg)/2)-1), msg, "=" * (25 - int(len(msg)/2)-1))
                 print(f'Jogada {i + 1}')
                 resultado = roll(dados_qtd, list_dados)
-                
-                for j in range(len(resultado)): 
-                    print(f'Dado n{j}: ', resultado[j])
+                imprime_dados(resultado)
 
                 #resultado ordenado
                 print('#' * 50)
