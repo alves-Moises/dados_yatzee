@@ -164,6 +164,7 @@ def main():
                 #segura os dados
                 print('dados pra rolar denovo: ', list_dados)
                 i += 1
+            info_jogadores[nome] = vA.registra_pontuacao(resultado, info_jogadores[nome])
             lin()
             print('Prixom jogador')
             lin()
