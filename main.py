@@ -1,7 +1,7 @@
 #author: alves-Moises
 
-from math import inf
 import random as r
+import verifa_acerto as vA
 
 def lin():
     print('=-' * 25)
