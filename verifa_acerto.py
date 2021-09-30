@@ -1,5 +1,5 @@
 
-
+#valida inteiro
 def valid_int():
     valid = False
     while not valid:
@@ -11,11 +11,7 @@ def valid_int():
             valid = True
     return x
 
-
-
-
-
-
+#printa tabela de pontuacoes
 def print_escolha():
     print('Digite sua escolha:')
     print('# [1] 1')
@@ -25,7 +21,6 @@ def print_escolha():
     print('# [5] 5')
     print('# [6] 6')
 
-
+#atualizar_pontuacao
 def registra_pontuacao(lista, jogador):
     print_escolha()
-    print(jogador)
