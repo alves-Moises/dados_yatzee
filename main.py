@@ -48,6 +48,13 @@ def valid_int():
             valid = True
     return x
 
+def imprime_dados(dados):
+    print('#' * 50)
+    for i in range(len(dados)): 
+        msg = f'dado n{i}: {dados[i]}'
+        print('#', ' ' * (21 - int(len(msg)/2-1)), msg, ' ' * (21 - int(len(msg)/2-1)), '#')
+    print('#' * 50)
+
 #continuar jogo
 def valida_jogar():
     valid = False
