@@ -27,3 +27,8 @@ for i in range(int(max(lista))):
             print(' ', end = '')
     print('')
 input('É isso.')
+
+print(f'x {"sim":^33} x')
+print(f'x {"aiushdiuahsd":^33} x')
+
+import testa
