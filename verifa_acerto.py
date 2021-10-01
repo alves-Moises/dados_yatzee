@@ -85,6 +85,7 @@ def print_pontuacao(jogador):
     print('#' * 50)
 #atualizar_pontuacao
 def registra_pontuacao(lista, jogador):
+    print('Lista para adicionar: ')
     print_escolha(jogador)
     escolha = escolhe_combo(lista, jogador)
     if escolha in ['1', '2', '3', '4', '5', '6']:
