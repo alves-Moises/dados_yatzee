@@ -91,4 +91,6 @@ def registra_pontuacao(lista, jogador):
     if escolha in ['1', '2', '3', '4', '5', '6']:
         nova_pontuacao = jgd.escolha_num(lista, jogador, escolha)
     
-    return jogador
+    print('Sua pontuação:')
+    print_escolha(jogador)
+    return nova_pontuacao
