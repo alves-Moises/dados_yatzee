@@ -17,8 +17,8 @@ def comb_func():
                 'poker':        -1,  # 4 iguais
                 '2x-3x':        -1,  # par e trinca
                 'escada':       -1,  # 1-5 
-                'Yatzee_1':     -1,  # Yatze! 
-                'Yatzee_2':     -1,   # 11111111111
+                'yatzee_1':     -1,  # Yatze! 
+                'yatzee_2':     -1,   # 11111111111
                 'chance':       -1
             }
     return comb
