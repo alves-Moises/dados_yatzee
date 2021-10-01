@@ -38,14 +38,12 @@ def escolhe_combo(lista, jogador):
         if escolha.lower() in escolha_lista():
             if (jogador[escolha] == -1):
                 valid = True
-                print('Escolha certa')
+                print('Pontuacao atualizada.')
             else: 
-                print('Essa casa já está pontuada.')
+                print('Essa combinacao já está pontuada.')
         else:
             print('Por favor, digite um valor válido')
             registra_pontuacao(lista, jogador)
-
-        
     return escolha
             
 #printa tabela de pontuacoes
@@ -67,6 +65,7 @@ def print_escolha(jogador):
     print('#' * 50)
     print('Sua escolha: ',  end='')
        
+#printa pontuacao
 def print_pontuacao(jogador):
     print('#'*50)
     print('#', f'{"COMANDO":^}',    '#',    f"{'COMBINACAO':^10}", f'{"PONTUACAO":^10}',                                                                '#')  
@@ -83,6 +82,7 @@ def print_pontuacao(jogador):
     print('#', f'{"[yy]":^10}',     '#',    f"{'yazzee 2':^10}", f'{jogador["yatzee_2"]:^10}'           if (jogador["yatzee_2"] != -1) else f'{0:^10}', '#')
     print('#', f'{"[0]":^10}',      '#',    f"{'chance':^10}", f'{jogador["chance"]:^10}'               if (jogador["chance"] != -1) else f'{0:^10}',   '#')
     print('#' * 50)
+
 #atualizar_pontuacao
 def registra_pontuacao(lista, jogador):
     print('Lista para adicionar: ')
