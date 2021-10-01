@@ -6,4 +6,4 @@ def escolha_num(lista, jogador, escolha):
 
 #4 iguais
 def poker(lista, jogador, escolha):
-    
+    ''
