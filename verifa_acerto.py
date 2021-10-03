@@ -36,7 +36,8 @@ def escolhe_combo(lista, jogador):
         if escolha.lower() in escolha_lista():
             if (jogador[escolha] == -1):
                 valid = True
-                print('Pontuacao atualizada.')
+                print('-> Atualizando pontuacao...')
+                sleep(1)
             else: 
                 print('Essa combinacao já está pontuada.')
         else:
