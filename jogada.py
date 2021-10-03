@@ -15,5 +15,12 @@ def escolha_num(lista, jogador, escolha):
     return jogador
 
 #4 iguais
-def poker(lista, jogador, escolha):
-    ''
+def poker(lista, jogador):
+    print('Digite o valor que você quer: ', end='')
+    numero = valid_int()
+    if lista.count(numero) >= 4:
+        jogador['pp'] = 30
+    else:
+        jogador['pp'] = 0
+
+    return jogador
