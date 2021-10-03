@@ -157,13 +157,14 @@ def main():
                         list_dados = nova_lista(resultado)
                 
                 #segura os dados
-                print('dados: ', list_dados)
+                # print('dados: ', list_dados)
                 i += 1
 
             #atualiza informacoes de pontuacao
-            info_jogadores[nome] = vA.registra_pontuacao(resultado, info_jogadores[nome], )
+            info_jogadores[nome] = vA.registra_pontuacao(resultado, info_jogadores[nome])
             lin()
-            print('Prixom jogador')
+            print('-> Proximo jogador...')
+            sleep(1)
             lin()
         
 main()
