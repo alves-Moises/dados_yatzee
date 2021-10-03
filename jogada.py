@@ -50,14 +50,14 @@ def vinte_tres(lista, jogador):
     sleep(1)
     return jogador
 
-    def es(lista, jogador):
-        jgd = sorted(lista)
-        
-        #verifica sequencia
-        for i in range(4): valid = valid and (True if lista[i] + 1 == lista [i + 1] else False)
-        jogador['es'] = 25 if valid else 0
-
-        return jogador
+def es(lista, jogador):
+    jgd = sorted(lista)
+    
+    #verifica sequencia
+    for i in range(4): valid = valid and (True if lista[i] + 1 == lista [i + 1] else False)
+    jogador['es'] = 25 if valid else 0
+    print('Escada atualizada!')
+    return jogador
 
         
                 
