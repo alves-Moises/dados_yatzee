@@ -20,11 +20,10 @@ def escolha_num(lista, jogador, escolha):
 
 #4 iguais
 def poker(lista, jogador):
-    print('Digite o valor que você quer: ', end='')
-    numero = valid_int()
-    if lista.count(numero) >= 4:
+    if (lista.count(1) >= 4) or (lista.count(2) >= 4) or (lista.count(3) >= 4) or (lista.count(4) >= 4) or (lista.count(5) >= 4) or (lista.count(6) >= 4):
         jogador['pp'] = 30
     else:
         jogador['pp'] = 0
-
+    print('Poker atualizado!')
+    sleep(1)
     return jogador
