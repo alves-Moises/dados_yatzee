@@ -41,9 +41,8 @@ def escolhe_combo(lista, jogador):
                 print('Essa combinacao já está pontuada.')
         else:
             print('Por favor, digite um valor válido')
-            registra_pontuacao(lista, jogador)
     return escolha
-            
+
 #printa tabela de pontuacoes
 def print_escolha(jogador):
     print('#'*50)
