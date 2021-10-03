@@ -43,4 +43,5 @@ def vinte_tres(lista, jogador):
         jogador['23x'] = 0
         print('23x zerado!')
     
+    sleep(1)
     return jogador
