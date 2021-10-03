@@ -14,11 +14,11 @@ def comb_func():
                 '4':            -1,
                 '5':            -1,
                 '6':            -1,
-                'poker':        -1,  # 4 iguais
-                '2x-3x':        -1,  # par e trinca
-                'escada':       -1,  # 1-5 
-                'yatzee_1':     -1,  # Yatze! 
-                'yatzee_2':     -1,   # 11111111111
+                'pp':           -1,  # 4 iguais
+                '23x':          -1,  # par e trinca
+                'es':           -1,  # 1-5 
+                'ytz':          -1,  # Yatze! 
+                'yy':           -1,   # 11111111111
                 'chance':       -1
             }
     return comb
