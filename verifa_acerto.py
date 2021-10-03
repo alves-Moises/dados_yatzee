@@ -84,15 +84,17 @@ def print_pontuacao(jogador):
 
 #atualizar_pontuacao
 def registra_pontuacao(lista, jogador):
-    print('Lista para adicionar: ')
+    print('Seus dados: ', lista)
     print_escolha(jogador)
     escolha = escolhe_combo(lista, jogador)
 
     #adiciona pontuacao
     if escolha in ['1', '2', '3', '4', '5', '6']:
         nova_pontuacao = jgd.escolha_num(lista, jogador, escolha)
-    elif escolha == 'poker':
-        nova_pontuacao = jgd.poker(lista)
+    elif escolha == 'pp':
+        nova_pontuacao = jgd.poker(lista, jogador)
     
+    print('asd')
     print_pontuacao(jogador)
+    sleep(1)
     return nova_pontuacao
