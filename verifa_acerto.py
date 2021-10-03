@@ -94,6 +94,11 @@ def registra_pontuacao(lista, jogador):
         nova_pontuacao = jgd.escolha_num(lista, jogador, escolha)
     elif escolha == 'pp':
         nova_pontuacao = jgd.poker(lista, jogador)
+    elif escolha == '23x':
+        nova_pontuacao = jgd.vinte_tres(lista, jogador)
+    elif escolha == 'es':
+        nova_pontuacao = jgd.es(lista, jogador)
+
     
     print('asd')
     print_pontuacao(jogador)
