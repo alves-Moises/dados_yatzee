@@ -31,14 +31,18 @@ def poker(lista, jogador):
 
 #2x 3x
 def vinte_tres(lista, jogador):
-    jgd = lista.sorted()
+    jgd = sorted(lista)
     #par e trinca
     if (jgd[0] == jgd[1] == jgd[2]) != (jgd[3] == jgd[4]):
         jogador['23x'] = 40
         print('23x Atualiado!')
+    
+    #trinca e par
     elif (jgd[0] == jgd[1] != jgd[2] == jgd[3] == jgd[4]):
         jogador['23x'] = 40
         print('23x Atualiado!')
+
+    #nao pontua
     else:
         jogador['23x'] = 0
         print('23x zerado!')
