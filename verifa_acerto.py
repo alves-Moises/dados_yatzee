@@ -19,11 +19,9 @@ def escolha_lista():
             '4',
             '5',
             '6',
-            't',
-            'p',
+            'pp',
             '23x',
             'es',
-            'ec',
             'ytz',
             'yy',
             '0'
@@ -72,15 +70,15 @@ def print_pontuacao(jogador):
     print('#',    f"{'COMBINACAO':^10}",  '#', f'{"PONTUACAO":^20}',                                                          '#')  
     print('#',    f"{'1':^10}",           '#', f'{jogador["1"]:^20}'          if (jogador["1"] != -1) else f'{0:^20}',        '#')
     print('#',    f"{'2':^10}",           '#', f'{jogador["2"]:^20}'          if (jogador["2"] != -1) else f'{0:^20}',        '#')
-    print('#',    f"{'4':^10}",           '#', f'{jogador["4"]:^20}'          if (jogador["4"] != -1) else f'{0:^20}',        '#')
     print('#',    f"{'3':^10}",           '#', f'{jogador["3"]:^20}'          if (jogador["3"] != -1) else f'{0:^20}',        '#')
+    print('#',    f"{'4':^10}",           '#', f'{jogador["4"]:^20}'          if (jogador["4"] != -1) else f'{0:^20}',        '#')
     print('#',    f"{'5':^10}",           '#', f'{jogador["5"]:^20}'          if (jogador["5"] != -1) else f'{0:^20}',        '#')    
     print('#',    f"{'6':^10}",           '#', f'{jogador["6"]:^20}'          if (jogador["6"] != -1) else f'{0:^20}',        '#')     
-    print('#',    f"{'poker':^10}",       '#', f'{jogador["poker"]:^20}'      if (jogador["poker"] != -1) else f'{0:^20}',    '#')
-    print('#',    f"{'2x-3x':^10}",       '#', f'{jogador["2x-3x"]:^20}'      if (jogador["2x-3x"] != -1) else f'{0:^20}',    '#')
-    print('#',    f"{'escada':^10}",      '#', f'{jogador["escada"]:^20}'     if (jogador["escada"] != -1) else f'{0:^20}',   '#')
-    print('#',    f"{'yatzee 1':^10}",    '#', f'{jogador["yatzee_1"]:^20}'   if (jogador["yatzee_1"] != -1) else f'{0:^20}', '#')
-    print('#',    f"{'yazzee 2':^10}",    '#', f'{jogador["yatzee_2"]:^20}'   if (jogador["yatzee_2"] != -1) else f'{0:^20}', '#')
+    print('#',    f"{'poker':^10}",       '#', f'{jogador["pp"]:^20}'      if (jogador["pp"] != -1) else f'{0:^20}',    '#')
+    print('#',    f"{'2x-3x':^10}",       '#', f'{jogador["23x"]:^20}'      if (jogador["23x"] != -1) else f'{0:^20}',    '#')
+    print('#',    f"{'escada':^10}",      '#', f'{jogador["es"]:^20}'     if (jogador["es"] != -1) else f'{0:^20}',   '#')
+    print('#',    f"{'yatzee 1':^10}",    '#', f'{jogador["ytz"]:^20}'   if (jogador["ytz"] != -1) else f'{0:^20}', '#')
+    print('#',    f"{'yazzee 2':^10}",    '#', f'{jogador["yy"]:^20}'   if (jogador["yy"] != -1) else f'{0:^20}', '#')
     print('#',    f"{'chance':^10}",      '#', f'{jogador["chance"]:^20}'     if (jogador["chance"] != -1) else f'{0:^20}',   '#')
     print('#' * 50)
 
