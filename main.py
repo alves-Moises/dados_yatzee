@@ -3,6 +3,7 @@
 import random as r
 import verifa_acerto as vA
 from time import sleep
+
 def lin():
     print('=-' * 25)
 
