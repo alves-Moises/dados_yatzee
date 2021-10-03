@@ -1,3 +1,4 @@
+from time import sleep
 
 def valid_int():
     valid = False
@@ -10,8 +11,11 @@ def valid_int():
             valid = True
     return x
 
+# 1 ou 2 ou 3 ou 4 ou 5 ou 6
 def escolha_num(lista, jogador, escolha):
     jogador[escolha] = lista.count(int(escolha)) * int(escolha)
+    print(f'Valor {escolha} atualizado com sucesso.')
+    sleep(1)
     return jogador
 
 #4 iguais
