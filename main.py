@@ -53,7 +53,7 @@ def imprime_dados(dados):
         print('#', ' ' * (21 - int(len(msg)/2-1)), msg, ' ' * (21 - int(len(msg)/2-1)), '#')
     print('#' * 50)
 
-#continuar jogo
+#continuar jogada
 def valida_jogar():
     valid = False
     while not valid:
