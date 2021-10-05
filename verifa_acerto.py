@@ -98,7 +98,10 @@ def registra_pontuacao(lista, jogador):
         nova_pontuacao = jgd.vinte_tres(lista, jogador)
     elif escolha == 'es':
         nova_pontuacao = jgd.es(lista, jogador)
-
+    elif escolha == 'ytz':
+        nova_pontuacao = jgd.ytz(lista, jogador)
+    elif escolha == 'yy':
+        nova_pontuacao = jgd.yy(lista, jogador)
     
     print('asd')
     print_pontuacao(jogador)
