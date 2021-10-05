@@ -68,6 +68,15 @@ def ytz(lista, jogador):
         jogador['ytz'] = 0
         print('Yatzee zerado.')
     return jogador
-        
-                
+
+#yatzee 111
+def yy(lista, jogador):
+    if  lista[0] == lista[1] == lista[2] == lista[3] == lista[4] == 1:
+        jogador['ytz'] = 50
+        print('Yatzee atualizado.')
+    else:
+        jogador['ytz'] = 0
+        print('Yatzee zerado.')
+    return jogador
+
                 
