@@ -59,6 +59,15 @@ def es(lista, jogador):
     print('Escada atualizada!')
     return jogador
 
+#yatze 2222
+def ytz(lista, jogador):
+    if  lista[0] == lista[1] == lista[2] == lista[3] == lista[4]:
+        jogador['ytz'] = 50
+        print('Yatzee atualizado.')
+    else:
+        jogador['ytz'] = 0
+        print('Yatzee zerado.')
+    return jogador
         
                 
                 
