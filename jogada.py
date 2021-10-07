@@ -84,8 +84,8 @@ def yy(lista, jogador):
 def chance(lista, jogador):
     soma = 0
     for value in lista:
-        soma += lista[value]
+        soma += value
         
-    jogador['chance'] = soma
+    jogador['0'] = soma
     return jogador
                 
