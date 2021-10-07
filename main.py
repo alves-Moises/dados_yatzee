@@ -27,7 +27,7 @@ def comb_func():
                 'es':           -1,  # 1-5 
                 'ytz':          -1,  # Yatze! 
                 'yy':           -1,   # 11111111111
-                'chance':       -1
+                '0':            -1
             }
     return comb
 
