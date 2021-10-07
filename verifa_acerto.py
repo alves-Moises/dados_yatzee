@@ -60,7 +60,7 @@ def print_escolha(jogador):
     print('#', f'{"[es]":^10}',     '#',    f"{'escada':^10}",      '#', f'{jogador["es"]:^10}'     if (jogador["es"] != -1)    else f'{"-":^10}',    '#')
     print('#', f'{"[ytz]":^10}',    '#',    f"{'yatzee 1':^10}",    '#', f'{jogador["ytz"]:^10}'    if (jogador["ytz"] != -1)   else f'{"-":^10}',    '#')
     print('#', f'{"[yy]":^10}',     '#',    f"{'yazzee 2':^10}",    '#', f'{jogador["yy"]:^10}'     if (jogador["yy"] != -1)    else f'{"-":^10}',    '#')
-    print('#', f'{"[0]":^10}',      '#',    f"{'chance':^10}",      '#', f'{jogador["0"]:^10}'      if (jogador["chance"] != -1) else f'{"-":^10}',   '#')
+    print('#', f'{"[0]":^10}',      '#',    f"{'chance':^10}",      '#', f'{jogador["0"]:^10}'      if (jogador["0"] != -1) else f'{"-":^10}',   '#')
     print('#' * 50)
     print('Escolha uma combinacao para atualizar: ',  end='')
        
@@ -80,7 +80,7 @@ def print_pontuacao(jogador):
     print('#',    f"{'escada':^10}",      '#', f'{jogador["es"]:^20}'         if (jogador["es"] != -1) else f'{"-":^20}',       '#')
     print('#',    f"{'yatzee 1':^10}",    '#', f'{jogador["ytz"]:^20}'        if (jogador["ytz"] != -1) else f'{"-":^20}',      '#')
     print('#',    f"{'yazzee 2':^10}",    '#', f'{jogador["yy"]:^20}'         if (jogador["yy"] != -1) else f'{"-":^20}',       '#')
-    print('#',    f"{'chance':^10}",      '#', f'{jogador["chance"]:^20}'     if (jogador["chance"] != -1) else f'{"-":^20}',   '#')
+    print('#',    f"{'chance':^10}",      '#', f'{jogador["0"]:^20}'          if (jogador["0"] != -1) else f'{"-":^20}',        '#')
     print('#' * 50)
 
 #atualizar_pontuacao
