@@ -122,6 +122,7 @@ def nova_lista(lista):
 def main():
     lista_jogadores = []
     info_jogadores = {}
+    dados_qtd = 5
 
     msg = 'Dados, rolagem, jogos '
     print("=" * 50)
@@ -135,9 +136,6 @@ def main():
     #informacoes jogadores
     lista_jogadores, info_jogadores = define_jogadores(qtd_jogadores)
    
-    print('\nDigite a quantidade de dados: ')
-    dados_qtd = valid_int()
-
     jogar = True
     while jogar:
            
