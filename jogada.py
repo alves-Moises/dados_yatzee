@@ -80,4 +80,12 @@ def yy(lista, jogador):
         print('Yatzee zerado.')
     return jogador
 
+#chance
+def chance(lista, jogador):
+    soma = 0
+    for value in lista:
+        soma += lista[value]
+        
+    jogador['chance'] = soma
+    return jogador
                 
