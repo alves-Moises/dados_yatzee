@@ -84,7 +84,7 @@ def roll(dices, dices_list = []):
 
 #pegar os valores para nova rolagem dos dados
 def nova_lista(lista):
-    imprime_dados(lista)
+    # imprime_dados(lista)
     print('Digite as posicoes que deseja manter: (ex: 1 2 3)')
     valid = False
     posicoes = [0]
@@ -102,7 +102,7 @@ def nova_lista(lista):
 
     #nova lista
     temp_list = []
-    for i in posicoes:
+    for i in sorted(posicoes):
         temp_list.append(lista[int(i)])
 
     return temp_list   
@@ -138,10 +138,13 @@ def main():
 
             while i < 3 and role == True:
                 lin()
+
                 msg = f'jogada de {nome}'
                 print("=" * (25 - int(len(msg)/2)-1), msg, "=" * (25 - int(len(msg)/2)-1))
+                vA.print_pontuacao(info_jogadores[nome])
+
                 print(f'Jogada {i + 1}')
-                resultado = roll(dados_qtd, list_dados)
+                resultado = sorted(roll(dados_qtd, list_dados))
                 imprime_dados(resultado)
 
                 #resultado ordenado
@@ -152,6 +155,7 @@ def main():
                 if not (i >= 2):    
                     print('[0] Encerrar jogada')
                     print('[1] Continuar jogando os dados')
+                    print('Sua escolha: ', end='')
                     if not(valida_jogar()):
                         role = False
                     else:
@@ -165,8 +169,8 @@ def main():
             info_jogadores[nome] = vA.registra_pontuacao(resultado, info_jogadores[nome])
             lin()
             print('-> Proximo jogador...')
-            sleep(1)
             lin()
+            sleep(1)
         
 main()
 
