@@ -7,6 +7,13 @@ from time import sleep
 def lin():
     print('=-' * 25)
 
+#verifica se há campos vazios
+def jogando_func(jogador):
+    valid = False
+    for value in jogador.values():
+        valid += bool(value == -1)
+    return bool(valid)
+
 def comb_func():
     comb = {
                 '1':            -1,
