@@ -217,6 +217,9 @@ while continua:
     #finalizar jogo
     if x == 2:
         continua = False
+        lin()
+        lin()
+        lin()
 lin()
 print('Obrigado por jogar!')
 lin()
