@@ -97,7 +97,12 @@ def nova_lista(lista):
         posicoes = input().split()
         print(posicoes)
         for valor in posicoes:
-            if not (valid_int_bool(valor)) or (len(posicoes) > len(lista)):
+            #valores não inteiros
+            if not (valid_int_bool(valor)):
+                valid = False
+
+            #inteiros fora dos parâmetros
+            elif not (0 <= int(valor) < len(lista)):
                 valid = False
 
     #nova lista
