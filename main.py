@@ -102,7 +102,6 @@ def nova_lista(lista):
             print('Digite posições válidas')
 
         posicoes = input().split()
-        print(posicoes)
         for valor in posicoes:
             #valores não inteiros
             if not (valid_int_bool(valor)):
