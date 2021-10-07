@@ -158,10 +158,6 @@ def main():
                 resultado = sorted(roll(dados_qtd, list_dados))
                 imprime_dados(resultado)
 
-                #resultado ordenado
-                print('#' * 50)
-                print(sorted(resultado))
-
                 lin()
                 if not (i >= 2):    
                     print('[0] Encerrar jogada')
@@ -171,9 +167,7 @@ def main():
                         role = False
                     else:
                         list_dados = nova_lista(resultado)
-                
-                #segura os dados
-                # print('dados: ', list_dados)
+
                 i += 1
 
             #atualiza informacoes de pontuacao
@@ -192,18 +186,42 @@ def main():
     print(f'{"Resultado:":^50}')
     for name in lista_jogadores:
         vA.print_pontuacao(info_jogadores[name])
+    lin()
 
-
-    #resultado geral ====================
+    #======= resultado geral ===========
     print(f'{"Somatório:":^50}')
     dict_pontuacao = {}
     for nome in lista_jogadores:
         soma = 0
-        for value in info_jogadores[nome].value():
+        for value in info_jogadores[nome].values():
             soma += value
         dict_pontuacao[nome] = soma
+        print('#', f'{"Nome:":^10}', f'{nome:^10}', ' ' * 10, f'{"Pontuacao: "^10}', f'{dict_pontuacao[nome]:^10}', '#')
+    lin()
 
+
+#inicio e recomeço
+continua = True
+while continua:
+    main()
     
-
-main()
-
+    valid = False
+    print('Você gostaria de jogar novamente? [1] sim [2] nao')
+    while not valid:
+        x = valid_int()
+        if not (x in [1, 2]):
+            print('Digite um valor válido.')
+        else:
+            valid = True
+    
+    #finalizar jogo
+    if x == 2:
+        continua = False
+lin()
+print('Obrigado por jogar!')
+lin()
+print(f'{"Autor: Moisés Alves":^50}')
+print(f'{"Github: alves-Moises":^50}')
+lin()
+        
+        
