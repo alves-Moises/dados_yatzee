@@ -180,9 +180,11 @@ def main():
             #atualiza informacoes de pontuacao
             info_jogadores[nome] = vA.registra_pontuacao(resultado, info_jogadores[nome])
             lin()
-            print('-> Proximo jogador...')
+            print('-> Jogada encerrada...')
             lin()
             sleep(1)
-        
+
+        #verifica se há campos vazios
+        jogar = jogando_func(info_jogadores[lista_jogadores[0]])
 main()
 
