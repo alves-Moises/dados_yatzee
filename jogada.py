@@ -25,7 +25,7 @@ def poker(lista, jogador):
         print('Poker atualizado!')
     else:
         jogador['pp'] = 0
-        print('Pokzer zerado!')
+        print('Poker zerado!')
     sleep(1)
     return jogador
 
