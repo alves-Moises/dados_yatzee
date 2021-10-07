@@ -196,7 +196,8 @@ def main():
         for value in info_jogadores[nome].values():
             soma += value
         dict_pontuacao[nome] = soma
-        print('#', f'{"Nome:":^10}', f'{nome:^10}', ' ' * 10, f'{"Pontuacao: "^10}', f'{dict_pontuacao[nome]:^10}', '#')
+        print('#' * 55)
+        print('#', f'{"Nome:":^10}', f'{nome:^10}', ' ' * 10, f'{"Pontuacao: ":^10}', f'{dict_pontuacao[nome]:^10}', '#')
     lin()
 
 
