@@ -68,7 +68,7 @@ def print_escolha(jogador):
 def print_pontuacao(jogador):
     print('#'*50)
     print(f"#{'Sua pontuação:':^50}#")
-    print('#',    f"{'COMBINACAO':^10}",  '#', f'{"PONTUACAO":^20}',                                                          '#')  
+    print('#',    f"{'COMBINACAO':^10}",  '#', f'{"PONTUACAO":^20}',                                                            '#')  
     print('#',    f"{'1':^10}",           '#', f'{jogador["1"]:^20}'          if (jogador["1"] != -1) else f'{"-":^20}',        '#')
     print('#',    f"{'2':^10}",           '#', f'{jogador["2"]:^20}'          if (jogador["2"] != -1) else f'{"-":^20}',        '#')
     print('#',    f"{'3':^10}",           '#', f'{jogador["3"]:^20}'          if (jogador["3"] != -1) else f'{"-":^20}',        '#')
