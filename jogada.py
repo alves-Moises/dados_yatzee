@@ -50,6 +50,7 @@ def vinte_tres(lista, jogador):
     sleep(1)
     return jogador
 
+#escada
 def es(lista, jogador):
     jgd = sorted(lista)
     valid = True
