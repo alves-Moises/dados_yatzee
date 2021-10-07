@@ -104,8 +104,8 @@ def registra_pontuacao(lista, jogador):
         nova_pontuacao = jgd.yy(lista, jogador)
     else:
         print('Algum erro com escolha (??)')
-        
-    print('asd')
+
+    print('...')
     print_pontuacao(jogador)
-    sleep(1)
+    sleep(2)
     return nova_pontuacao
