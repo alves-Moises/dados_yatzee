@@ -34,12 +34,12 @@ def vinte_tres(lista, jogador):
     jgd = sorted(lista)
     #par e trinca
     if (jgd[0] == jgd[1] == jgd[2]) != (jgd[3] == jgd[4]):
-        jogador['23x'] = 40
+        jogador['23x'] = 30
         print('23x Atualiado!')
     
     #trinca e par
-    elif (jgd[0] == jgd[1] != jgd[2] == jgd[3] == jgd[4]):
-        jogador['23x'] = 40
+    elif (jgd[0] == jgd[1]) != (jgd[2] == jgd[3] == jgd[4]):
+        jogador['23x'] = 30
         print('23x Atualiado!')
 
     #nao pontua
