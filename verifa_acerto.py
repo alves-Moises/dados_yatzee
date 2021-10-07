@@ -48,7 +48,7 @@ def escolhe_combo(lista, jogador):
 #printa tabela de pontuacoes
 def print_escolha(jogador):
     print('#'*50)
-    print('#', f'{"COMANDO":^10}',  '#',    f"{'COMBINACAO':^10}",  '#', f'{"PONTUACAO":^10}',                                                      '#')  
+    print('#', f'{"COMANDO":^10}',  '#',    f"{'COMBINACAO':^10}",  '#', f'{"PONTUACAO":^10}',                                                        '#')  
     print('#', f'{"[1]":^10}',      '#',    f"{'1':^10}",           '#', f'{jogador["1"]:^10}'      if (jogador["1"] != -1)     else f'{"-":^10}',    '#')
     print('#', f'{"[2]":^10}',      '#',    f"{'2':^10}",           '#', f'{jogador["2"]:^10}'      if (jogador["2"] != -1)     else f'{"-":^10}',    '#')
     print('#', f'{"[3]":^10}',      '#',    f"{'3':^10}",           '#', f'{jogador["3"]:^10}'      if (jogador["3"] != -1)     else f'{"-":^10}',    '#')
