@@ -186,5 +186,25 @@ def main():
 
         #verifica se há campos vazios
         jogar = jogando_func(info_jogadores[lista_jogadores[0]])
+
+    #======== fim de jogo ============
+
+    #======= tabelas de pontuacao ========
+    print(f'{"Resultado:":^50}')
+    for name in lista_jogadores:
+        vA.print_pontuacao(info_jogadores[name])
+
+
+    #resultado geral ====================
+    print(f'{"Somatório:":^50}')
+    dict_pontuacao = {}
+    for nome in lista_jogadores:
+        soma = 0
+        for value in info_jogadores[nome].value():
+            soma += value
+        dict_pontuacao[nome] = soma
+
+    
+
 main()
 
